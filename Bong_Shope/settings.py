@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Bong_Shope.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR.joinpath('templates')], #сюда прописываем в какой папке искать фронтенд
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
